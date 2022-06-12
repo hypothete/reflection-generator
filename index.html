@@ -5,12 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Reflection MP4 Generator</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="/style.css">
 </head>
 <body>
   <section id="content">
     <canvas></canvas>
     <div id="controls">
+      <p>Drag and drop an image on the left</p>
       <label>
         <span>Amplitude</span>
         <input id="amplitude" type="range" min="0" max="64" step="1" value="32" />
@@ -27,8 +28,11 @@
         <span>Show debug?</span>
         <input type="checkbox" id="showdebug"/>
       </label>
+      <label>
+        
+      </label>
     </div>
   </section>
-  <script src="app.js"></script>
+  <script type="module" src="/app.js"></script>
 </body>
 </html>

@@ -37,6 +37,10 @@ body {
   justify-content: space-between;
 }
 
+#controls p {
+  text-align: center;
+}
+
 input[type=range] {
   min-width: 200px;
 }
