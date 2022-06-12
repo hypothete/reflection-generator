@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Reflection MP4 Generator</title>
+  <title>Reflection WebM Generator</title>
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
@@ -12,6 +12,7 @@
     <canvas></canvas>
     <div id="controls">
       <p>Drag and drop an image on the left</p>
+      <p>Max resolution 400 x 400</p>
       <label>
         <span>Amplitude</span>
         <input id="amplitude" type="range" min="0" max="64" step="1" value="32" />
@@ -29,7 +30,8 @@
         <input type="checkbox" id="showdebug"/>
       </label>
       <label>
-        
+        <button id="recordbtn">Get WebM Download Link</button>
+        <a id="dllink" target="_blank"></a>
       </label>
     </div>
   </section>
