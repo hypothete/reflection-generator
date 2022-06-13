@@ -31,8 +31,8 @@ async function loadImage(src) {
   img = new Image();
   img.src = src || imgUrl;
   await img.decode();
-  imgHeight = Math.min(img.height, 200);
-  imgWidth = Math.floor(imgHeight * (img.width / img.height));
+  imgHeight = Math.min(img.height, 240);
+  imgWidth = Math.min(640, Math.floor(imgHeight * (img.width / img.height)));
   can.width = imgWidth;
   can.height = imgHeight * 2;
   if (!animFrame) {
